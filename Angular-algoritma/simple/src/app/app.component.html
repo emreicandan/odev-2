@@ -1,0 +1,16 @@
+
+
+<button (click)="findPrimeNumber()">10-100 Arası Asal Sayıları Bul</button>
+<div> {{arr|json}}</div>
+
+<hr>
+<div>1 ile 500 arasındaki tam sayılardan tek sayıların toplamı ile çift
+    sayıların toplamının farkı negatif mi, pozitif mi ?</div>
+<button (click)="nOp()">Cevap</button>
+<div> {{sonuc}}</div>
+
+<hr>
+<input type="number" [(ngModel)]="x">
+<input type="number" [(ngModel)]="y">
+<input type="number" [(ngModel)]="z">
+<div> {{calculate()|json}} </div>
