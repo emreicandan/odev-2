@@ -1,0 +1,32 @@
+
+<div class="container">
+    <div class="row justify-content-center mt-5 mb-5">
+        <div class="card border rounded-3 border-success text-center " *ngFor="let item of productDetail">
+            <img class="card-img-top mt-3 border border-1 border-success ms-auto me-auto" src={{item.img}} alt="Title" />
+            <div class="card-body">
+                <h4 class="card-title">{{item.brand}}</h4>
+                <p class="card-text">{{item.model}}</p>
+                    <div class="row border border-success rounded-5 border-1 p-3">
+                        <div class="col-sm-6 border-end border-success">
+                            <button (click)="inCrease()"><ng-icon class="ico" name="heroArrowUp"></ng-icon></button>
+                            <p class="ms-2 mt-3">{{item.piece}}</p>
+                            <button (click)="deCrease()" > <ng-icon class="ico" name="heroArrowDown"></ng-icon></button>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="card-text mt-4 me-auto">Color : {{item.color}}</p>
+                            <p class="card-text me-auto">Price : {{item.price}}₺ </p>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Numbers</option>
+                                <option value="1">{{item.numbers[0]}}</option>
+                                <option value="1">{{item.numbers[1]}}</option>
+                                <option value="1">{{item.numbers[2]}}</option>
+                                <option value="1">{{item.numbers[3]}}</option>
+                                <option value="1">{{item.numbers[4]}}</option>
+                              </select>
+                        </div>
+                        <a  (click)="addBasket()" class="btn btn-success mt-2 w-50 me-auto ms-auto">Add Basket</a>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>

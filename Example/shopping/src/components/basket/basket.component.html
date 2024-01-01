@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="row">
+        <h1>
+            Sepetiniz :
+        </h1>
+        <hr>
+        <div class="card ms-2 mb-5 " *ngFor="let item of basketItems">
+            <img class="card-img-top ms-auto me-auto" src={{item.img}} alt="Title" />
+            <div class="card-body">
+                <h4 class="card-title">{{item.brand}}/{{item.model}}</h4>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm">
+                            <p>Piece:{{item.piece}} UnitPrice:{{item.price}}</p>
+                        </div>
+                        <div class="col-sm">
+                            <p>TotalPrice: {{item.price*item.piece}}₺</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>

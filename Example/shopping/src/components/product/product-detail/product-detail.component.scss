@@ -1,0 +1,18 @@
+div>img{
+    width: 450px;
+    height: 500px;
+    border-radius: 30px;
+}
+div.card{
+    max-width: 600px;
+}
+div>button{
+    border: none;
+    background: none;
+    width: 25px;
+    height: 25px;
+    .ico{
+        width: 22px;
+        height: 22px;
+    }   
+}
